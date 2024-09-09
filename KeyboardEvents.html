@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEYBOARD EVENTS</title>
+
+</head>
+<style>
+    body{
+background-color: rgb(47, 196, 255)
+    }
+
+    .top{
+       color:blue;
+        margin-top: 50px;
+        margin-left: 200px;
+        font-size: 40px;
+
+    }
+    #form{
+        color: black;
+        margin-left: 180px;
+        margin-top: 70px;
+        font-size: 40px;
+        border: 12px solid;
+        border-color: black;
+        padding-left: 120px;
+        padding-bottom: 30px;
+    }
+    .first{
+        width: 200px;
+        height: 50px;
+        color: blue;
+        font-size: 35px;
+    }
+    .mid{
+        width: 200px;
+        height: 50px;
+        color: blue;
+        font-size: 35px;
+    }
+    .last{
+        width: 200px;
+        height: 50px;
+        color: blue;
+        font-size: 35px;
+    }
+</style>
+<body>
+
+    <h1 class="top"> KEYBOARD EVENTS </h1>
+
+    <form id="form">
+        <p>Name</p>
+        <!-- <input class="first" type="text" onkeydown="alert(this.value);"> -->
+        <input type="text" class="first" onkeydown="
+        document.getElementById('form')
+        .style.background=this.value">
+        <p>Mid Name</p>
+        <!-- <input class="mid" type="text" onkeyup="alert(this.value); "> -->
+        <input  type="text" class="mid" onkeyup="  document.getElementById('form')
+        .style.background=this.value">
+
+        <p> Last Name </p>
+
+        <!-- <input class="last" type="text" onkeypress="alert(this.value); "> -->
+        <input type="text"  class="last" onkeypress=" ">
+
+    </form>
+    
+</body>
+</html>

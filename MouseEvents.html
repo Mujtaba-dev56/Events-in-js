@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+    <style>
+
+        .top{
+            margin-left: 200px;
+            margin-top: 80px;
+        }
+.box{
+    background-color: orangered;
+    width: 250px;
+    height: 250px;
+    margin:150px;
+    
+
+}
+.mouse{
+    margin-left: 200px;
+    margin-top: 150px;
+    color: blue;
+    font-size: 50px;
+}
+
+.key{
+    margin-left: 200px;
+    margin-top: 50px;
+    font-size: 50px;
+}
+    </style>
+</head>
+<body>
+    <h1 class="top">EVENTS IN JS</h1>
+
+
+    <h3 class="mouse">   Mouse Events</h3>
+    <!-- single click -->
+    <div class="box" onclick="even()">  </div>
+
+    <!--  For right click -->
+    <div class="box" oncontextmenu="even()">  </div>
+    
+         <!-- Double click -->
+    <div class="box" ondblclick="even()">  </div>
+
+
+         <!--Mouse down  -->
+    <div class="box" onmousedown="even()">  </div>
+
+
+<!-- Mouse up -->
+<div class="box" onmouseup="even()">  </div>
+
+
+<!-- mouse over -->
+
+<div class="box" onmouseover="even()">  </div>
+
+
+<!-- mouse out -->
+<div class="box" onmouseout="even()">  </div>
+
+
+
+
+  <h3 class="key"> Keyboard Events</h3>
+</body>
+<script>
+function even() {
+    alert('Box Clicked');
+    
+}
+</script>
+</html>
